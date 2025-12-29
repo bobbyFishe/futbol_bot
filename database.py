@@ -10,7 +10,7 @@ class DatabaseManager:
         if db_path is None:
             if not os.path.exists('data'):
                 os.makedirs('data')
-            self.db_path = '/data/user_name.db'
+            self.db_path = Constants.db_path_
         else:
             self.db_path = db_path
 
